@@ -18,6 +18,12 @@
 
 # YOUR CODE HERE 1 to read the data into data and parse dates
 
+import numpy as np
+import pandas as pd
+
+fp=r'data/helsinki-vantaa.csv'
+data=pd.read_csv(fp,delim_whitespace=True,
+parse_dates=[0],index_col=0)
 # This test print should print first five rows
 print(data.head())
 
