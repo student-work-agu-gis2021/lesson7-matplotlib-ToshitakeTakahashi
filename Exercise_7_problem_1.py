@@ -35,7 +35,13 @@ assert len(data) == 1000, "There should be 1000 rows of data."
 # 
 
 # YOUR CODE HERE 2 to set colors
-
+r=np.random.rand(1000)
+g=np.random.rand(1000)
+b=np.random.rand(1000)
+colors=pd.DataFrame()
+colors['R']=r
+colors['G']=g
+colors['B']=b
 # This test print should print out 10 first numbers in the variable colors
 print(colors[0:10])
 
