@@ -65,10 +65,12 @@ assert len(colors) == 1000, "There should be 1000 random numbers for colors"
 import matplotlib.pyplot as plt
 
 plt.scatter(x,y,s=50,c='b',marker="D",alpha=1.0)
-plt.show()
+
 # Add labels and title
 # YOUR CODE HERE 4
-
+plt.xlabel("xlabel")
+plt.ylabel("ylabel")
+plt.show()
 # Save the plot as a png file:
 outputfp = "my_first_plot.png"
 
